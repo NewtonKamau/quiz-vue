@@ -1,9 +1,8 @@
 <template>
- <div>
-    <b-nav>
-        <b-nav-item active>Fancy Quiz App</b-nav-item>
-        <b-nav-item>Counter:1/4</b-nav-item>
-     
+  <div>
+    <b-nav tabs>
+      <b-nav-item disabled>Fancy Quiz App</b-nav-item>
+      <b-nav-item disabled>Counter:1/4</b-nav-item>
     </b-nav>
-</div>
+  </div>
 </template>
