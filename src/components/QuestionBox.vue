@@ -3,7 +3,7 @@
     <div>
       <b-jumbotron>
         <template #lead>
-          Some question
+          {{ currentQuestion.question}}
         </template>
 
         <hr class="my-4" />
@@ -18,3 +18,10 @@
     </div>
   </div>
 </template>
+<script>
+export default {
+    props: {
+          currentQuestion:Object
+        }
+}
+</script>
