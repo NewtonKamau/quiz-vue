@@ -8,8 +8,8 @@
 
         <hr class="my-4" />
 
-        <p >
-      Answers 
+        <p v-for="answer in answers" :key="answer">
+      {{ answer }}
         </p>
 
         <b-button variant="primary" href="#">Submit</b-button>
@@ -27,7 +27,8 @@ export default {
         computed:{
           answers(){
             let answers = [...this.currentQuestion.incorrect_answers]
-          return answers.push(this.currentQuestion.correct_answer)
+              answers.push(this.currentQuestion.correct_answer);
+            return answers
           }
         }
 }
