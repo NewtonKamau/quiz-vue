@@ -6,6 +6,7 @@
     <b-col>   
       <QuestionBox 
   :currentQuestion="questions[index]"
+  :next="next"
     /> 
     </b-col>
   
@@ -28,6 +29,11 @@ export default {
     return {
       questions:[],
       index:0
+    }
+  },
+  methods:{
+    next(){
+      this.index++
     }
   },
   mounted:function(){
