@@ -5,6 +5,7 @@
   <b-row sm="6" offset="3">
     <b-col>   
       <QuestionBox 
+      v-if="questions.length"
   :currentQuestion="questions[index]"
   :next="next"
     /> 
