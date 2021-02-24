@@ -6,8 +6,8 @@
     <b-col>   
       <QuestionBox 
       v-if="questions.length"
-  :currentQuestion="questions[index]"
-  :next="next"
+      :currentQuestion="questions[index]"
+      :next="next"
     /> 
     </b-col>
   
@@ -38,7 +38,7 @@ export default {
     }
   },
   mounted:function(){
-    fetch('https://opentdb.com/api.php?amount=10&category=18&difficulty=medium&type=multiple',{
+    fetch('https://opentdb.com/api.php?amount=10&category=9&difficulty=medium&type=multiple',{
       method: 'get'
     }).then((response) => {
       return response.json();
