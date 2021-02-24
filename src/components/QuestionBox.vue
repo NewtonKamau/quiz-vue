@@ -7,9 +7,15 @@
         </template>
 
         <hr class="my-4" />
-
-        <p v-for="answer in answers" :key="answer">
-      {{ answer }}
+  <b-list-group>
+    <b-list-group-item 
+    v-for="answer in answers" 
+    :key="answer"
+    >
+       {{ answer }}
+      </b-list-group-item>
+</b-list-group>
+        <p >
         </p>
 
         <b-button variant="primary" href="#">Submit</b-button>
